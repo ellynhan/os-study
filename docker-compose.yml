@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+    os:
+        container_name: os-study
+        image: os
+        volumes:
+            - ./volumes:/home
+        ports:
+            - 1234:1234
+            - 3030:3030
+        tty: true
